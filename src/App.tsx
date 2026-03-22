@@ -1,0 +1,358 @@
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { 
+  ChevronLeft, 
+  ChevronRight, 
+  ArrowRight, 
+  ArrowDown, 
+  Instagram,
+  Linkedin,
+  Twitter
+} from 'lucide-react';
+
+// --- Components ---
+
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-6'}`}>
+      <nav className="flex justify-between items-center px-8 max-w-7xl mx-auto">
+        <a href="#" className="font-headline font-bold text-2xl tracking-tighter text-tertiary">Richa</a>
+        <div className="hidden md:flex items-center gap-12">
+          <a href="#web-projects" className="font-headline tracking-tight text-lg text-primary hover:text-tertiary transition-colors">Projects</a>
+          <a href="#about" className="font-headline tracking-tight text-lg text-primary hover:text-tertiary transition-colors">About</a>
+          <a href="#design-showcase" className="font-headline tracking-tight text-lg text-primary hover:text-tertiary transition-colors">Design</a>
+        </div>
+        <button className="bg-tertiary text-on-tertiary px-6 py-2 rounded-lg font-medium hover:scale-95 active:scale-90 transition-transform duration-300">
+          Hire Me
+        </button>
+      </nav>
+    </header>
+  );
+};
+
+const Hero = () => {
+  return (
+    <section id="hero" className="min-h-screen flex flex-col justify-center px-8 md:px-20 max-w-7xl mx-auto">
+      <motion.span 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="font-label text-sm uppercase tracking-[0.3em] text-on-surface-variant mb-6"
+      >
+        Available for freelance
+      </motion.span>
+      <motion.h1 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="font-headline text-5xl md:text-8xl font-extrabold tracking-tighter leading-tight mb-8 max-w-4xl"
+      >
+        Hey, I'm <span className="text-tertiary italic text-glow">Richa</span>, Designer and Developer.
+      </motion.h1>
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed"
+      >
+        Crafting digital experiences where technical precision meets expressive soul. Specializing in high-end editorial interfaces and scalable web solutions.
+      </motion.p>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+        className="mt-12 flex items-center gap-8"
+      >
+        <a href="#about" className="flex items-center gap-2 text-primary group cursor-pointer">
+          <span className="font-label uppercase tracking-widest text-sm">Scroll to explore</span>
+          <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+        </a>
+      </motion.div>
+    </section>
+  );
+};
+
+const About = () => {
+  return (
+    <section id="about" className="bg-surface-container-low py-32 px-8 md:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+        <div className="md:col-span-5 aspect-[4/5] rounded-xl overflow-hidden relative">
+          <img 
+            src="https://lh3.googleusercontent.com/aida/ADBb0ug3n62uw035EdPNhZfVR8d7oYiRdwdfKMJ9Gd0SrrQNnPJPRUxlFA5M1RS7IHpPZZNYWw7IjtAM6Ilzv01zNvCpUc3cyeTjbbZfKKADdWiMfuuHHrU_JRq9J1k1I-j1ajfs21wCdBhT8m1KD5alUtl_Ypy_i6ykTzH9g2wh1mMUAwhdYhxwkQFXux-ocjdyv5RpBZtmlvLzpb_YWwL12FE1umx8NIURoc8h_nFnzv7avnBW-5LXPwl3NnWW_GwW-7DSiZGqjxZ37Q" 
+            alt="Richa's Portrait" 
+            className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+        </div>
+        <div className="md:col-span-7">
+          <h2 className="font-headline text-4xl md:text-5xl mb-8 leading-tight">
+            Bridging the gap between <br/><span className="text-primary">Logic & Aesthetics.</span>
+          </h2>
+          <div className="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+            <p>With a background rooted in both computer science and visual communication, I don't just build websites—I curate digital spaces. I believe that every line of code should serve a purpose, and every pixel should tell a story.</p>
+            <p>My approach is editorial by nature. I value whitespace, intentional asymmetry, and the power of subtle interaction. Whether I'm architecting a complex AI integration or refining a brand's visual identity, my focus remains on clarity and character.</p>
+          </div>
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <p className="font-label text-xs uppercase tracking-widest text-tertiary mb-2">Technical</p>
+              <p className="text-on-surface font-medium">Python, C, C++, HTML, CSS, JavaScript, MongoDB, MySQL, Node.js, React</p>
+            </div>
+            <div>
+              <p className="font-label text-xs uppercase tracking-widest text-tertiary mb-2">Creative</p>
+              <p className="text-on-surface font-medium">Adobe Photoshop, Figma, Canva, UI/UX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const WebProjects = () => {
+  const projects = [
+    {
+      title: "The Fluid Retailer",
+      category: "Retail Innovation",
+      description: "A seamless, mobile-first ecosystem for the modern shopper. Scan, pay, and transition effortlessly.",
+      image: "https://lh3.googleusercontent.com/aida/ADBb0ujvhBywpD2A-11UHaRRGyxw4PU2oET057MWF2dAr0OjddnLX8wANkc_b0OwefORsYQuE-T5Yz76YA0bUdobf0KiZMWe15JcBOG2SM2S1orusLv9B0bhgAYBAV-Ebw5PvdhgIL4Oiwf83aKDLG9KbIpWI2PLdC_7HijEQh9lX_0zI93IDfndwyRjrbXipVd1khkrrYyRrG7vohnJzCasckwbYMpV3L1Bpp8yWQegGfmn-idXNdY9AB9bsPQP2WfJsbk2c_Q5kCcnLng",
+      link: "https://shopping-renamed.onrender.com",
+      span: "md:col-span-8"
+    },
+    {
+      title: "AI Text Humaniser",
+      category: "AI Tool",
+      description: "Bridging the gap between algorithms and authenticity.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBHoU14lm-Km1T_NMq7zysjORpPxq4RxGU4LWuTuJXkFLBJS4zhY-iXgGREsYCuIQ2cbmwD2zfYVYsn1QuWAISh0XMc8Hu0vtmuXWuxyM-ftXrMYUE06pVGAs0u5gUjB5J9S1YVgiLNlnDAeoynccjPKGUh2VhH3n0tn0hiCIgbRO7V_STDAGWXKA8kqdFXNDciM0Z3ZXp7V61QH9OikrbHt0GcD4y7EnfPHneuUTOv4Gx3Y5abgk9g8VrgBIFOXvHOWxPxDttwRM4K",
+      link: "https://ai-text-humaniser.onrender.com/",
+      span: "md:col-span-4"
+    },
+    {
+      title: "Egg Catcher",
+      category: "Game Design",
+      description: "A whimsical, physics-based interaction experiment built with JavaScript and p5.js.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDuAXe44yx3MAZS3pNGFLU8zaBdzOjn3Ek6XEDkOSnf7XBBsokZz-maFZb4ewcsG5xuAV0D4FPJ1q7j4_pS4M5FIrlIarGsGYCOXGKBO5u4t-cRKqLDz9LBd6ctAR1XqKBUVsWG7qgPeC-gzQy4_OljxsCCnpypg5fQbndnt7Sg30sC6UFbPeiUGfzdFPxfo8SUepy_LUl1ui5YhlgmWtPHC-EZC7_EARSlGIy5BHRceytZiMSEOxfwigBkIwvdCSdgtv06egYEttjF",
+      link: "https://richa-ambooken.github.io/portfolio/game/index.html",
+      span: "md:col-span-4"
+    },
+    {
+      title: "Model Failure Analysis",
+      category: "Data Viz",
+      description: "A data-driven dashboard designed for visualizing systemic risks in predictive modeling.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBkx31wGS-XyFY4lTDhD2F9RJpklfy2JplgPdFR5YZGCCKEutCiAlKEboJXzFmHJ3-rK1QrQHplP4vNK_hovluDC6V_rwuPPL5VqG79xF0O3hEPQDvIqYUSRxLZgwj57MChSQBwtC99miZQS40rcOUwKFm9QejaA_Hw0gJfsREk6kk8Ix2ZeeqywbVE6AN_Bet7DVfosXg44QndFZ4bWlTYgHVarBrXMXP8OkgP1NaX-043XJkSv4FNiaQ4jrWSqYCOHjvVXTz0whyU",
+      link: "#",
+      span: "md:col-span-4"
+    },
+    {
+      title: "Pastel Pantry",
+      category: "E-commerce",
+      description: "A minimalist e-commerce concept for artisanal pantry staples with a focus on typography.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBHX5oviKfr4VtfA2wSNYIYmBZzvr45SJ6TgHDpiGQfauiZW4ykMAkEyNKfvjmCop1ZqPDBgp6hELVEhZYNcxdb1OeOb00wUJr5z8H355_RXTMMtaYGUHRLjQiu_8wd6k9ArsqPY9EjRcaZfGU43CP14AsNYIybPL0ssNY8cbZkOkpSlGhIoKxlzEyaYl3fqdz6Lszs_XmMOiil75Hz8pxLULTLEXuv4t74BOsYzfyeIakooK5gSo3C38VX6dgfhSytW9Fu3aIQCuBO",
+      link: "https://richa-ambooken.github.io/portfolio/foodweb/index.html",
+      span: "md:col-span-4"
+    }
+  ];
+
+  return (
+    <section id="web-projects" className="py-32 px-8 md:px-20 max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div>
+          <span className="font-label text-sm uppercase tracking-widest text-on-surface-variant">Featured Work</span>
+          <h2 className="font-headline text-5xl mt-4">Web Projects</h2>
+        </div>
+        <p className="max-w-xs text-on-surface-variant text-right md:text-left">Selected digital platforms built with a focus on performance and soul.</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+        {projects.map((project, idx) => (
+          <motion.a 
+            key={idx}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: idx * 0.1 }}
+            className={`${project.span} group cursor-pointer block`}
+          >
+            <div className="relative overflow-hidden rounded-xl bg-surface-container-high aspect-[16/9] mb-6">
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-surface-dim/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                <span className="text-tertiary font-label text-xs uppercase tracking-widest mb-2">{project.category}</span>
+                <h3 className="font-headline text-3xl">{project.title}</h3>
+              </div>
+            </div>
+            <div className="flex justify-between items-start">
+              <div>
+                <h3 className="font-headline text-2xl mb-2">{project.title}</h3>
+                <p className="text-on-surface-variant max-w-md">{project.description}</p>
+              </div>
+              <ArrowRight className="text-primary group-hover:translate-x-2 transition-transform" />
+            </div>
+          </motion.a>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+const DesignCarousel = ({ title, items }: { title: string, items: any[] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % items.length);
+  const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
+
+  return (
+    <div className="px-8 md:px-20 max-w-7xl mx-auto mb-32">
+      <h3 className="font-headline text-3xl mb-12 italic text-tertiary">{title}</h3>
+      <div className="relative max-w-4xl mx-auto">
+        <button 
+          onClick={prevSlide}
+          className="absolute -left-12 md:-left-20 top-1/2 -translate-y-1/2 z-10 p-2 text-primary hover:text-tertiary transition-colors"
+        >
+          <ChevronLeft className="w-10 h-10" />
+        </button>
+        <button 
+          onClick={nextSlide}
+          className="absolute -right-12 md:-right-20 top-1/2 -translate-y-1/2 z-10 p-2 text-primary hover:text-tertiary transition-colors"
+        >
+          <ChevronRight className="w-10 h-10" />
+        </button>
+        
+        <div className="relative overflow-hidden rounded-xl shadow-2xl shadow-black/40 bg-surface-container-high">
+          <AnimatePresence mode="wait">
+            <motion.div 
+              key={currentIndex}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.4 }}
+              className="w-full"
+            >
+              <div className="aspect-[4/5] w-full">
+                <img 
+                  src={items[currentIndex].image} 
+                  alt={items[currentIndex].title} 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="p-8 bg-surface-container-high">
+                <h4 className="font-label text-xs uppercase tracking-[0.3em] text-primary">{items[currentIndex].label}</h4>
+                <p className="font-headline text-2xl mt-2 italic text-on-surface">{items[currentIndex].title}</p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        <div className="flex justify-center gap-4 mt-8 overflow-x-auto pb-2 no-scrollbar">
+          {items.map((item, idx) => (
+            <button 
+              key={idx}
+              onClick={() => setCurrentIndex(idx)}
+              className={`flex-shrink-0 w-12 h-16 rounded overflow-hidden border-2 transition-all ${currentIndex === idx ? 'border-primary opacity-100' : 'border-transparent opacity-40 hover:opacity-100'}`}
+            >
+              <img src={item.image} alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DesignShowcase = () => {
+  const mixtapeItems = [
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0ujfmhVN8hbidhyYf1OpuzpmqeSqK8TPFYWNQ7wNoMSnwJlGozpxzm3_AcyjljhyatFIYV30jRMBpFX1JqUQSmTySb81cb2hgRgCzucfkcybITPj1AbDr2Lm2E40SzcFR7ettLhy_LHB2_rjQ0hZmm2K4jn3ecxJL5l1I9LkhsxqumYO3MnQ7enaQ_5oOxNG4gRmW-U9_2rBjVW8QGi-FYSRoQAp_JBKBJ2JdbwfX4D5CAPsr_OR-3WfezfhKim1QSe6Kh4n4Cakyh4", label: "Concept Art", title: "Unhinged Mixtape - Cover Art" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0ui6ac6foXdKbJJdx7-9gEUvazvepktcGwMCQVgF0IQmSr7XSp8dSdVDvS_aIVtAaxHAhXm3Sy1z1ZdbG49T1hONwnoTtNeR5iSdpoMdFY8TprBwaBkd1mCbJR-0EOqn1EFJkUm6rr66UTf0uj0Y0J9qHHyzi02CgJ0-Kw-2hRICoTu9LBMQCSilrRdr3rttl2ZQrquaBuWOt5RwDoYO7iaYU6ogsptayTKaw24GpJSV4b4viofJ8p96DOzCOt0BZb67hS2RI6QuMZE", label: "Creative Direction", title: "Turning Music into Melodies" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uh-4FAPAAiIOT7lHyCqvJzPkDgcp1MZB0UJHykNw587qC3iFC3bm9YM03puiXoS22O18Nk3R_stPt6bY0rMIsMORIQnQV71iY51wxrqCkVWgvKJt7aKBApyQx3Vt357jxXNBy-bMY4JYiZze256TWLJRHiC-RF6qvka_tvBT_5pN17xpctX0eoIdYxLgYqNHJ1U6DdkEBiXIOBc3K9WPsKnu17rsSmFYKlqo-6ImsE8cN-dOwC0EHN14U7gCt_0Rs51Lun80RPRwA", label: "Strategy", title: "Our Services" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uiKmGeXMmTaPJyXuYE7JD4bQKyCny63MPMq-J-kiktP-x6-apE2bmV6uxJxhJsAm7OR8twXFqP3iQRJQqSR7VRR73qqcHxFVapMmisxN0DLi8b10Nz3CeAUQDZ14pMjSbiiKinZM67OR_zpL5I5FjIPJO71ek2AZkMQiV7UqQpToxeVsKw0ClGe5p-s3rysJxmD5I--foOHXuzoW68YTgIDm3ZN8iBOtNR-2CznWbVaBZZxd3Jx0QwetrR1TvxNI5yJUZFR72fqVKw", label: "Branding", title: "Our Edge" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uipTS-gZt_6Oj_Z9nymAWoD7G8MVwG5bJuhlcYJYydwMxwerLazogUrhpjgRQFzpEiEl-WJIzDoBONuA4K_kXD8BOfNNpr2Fc5q-LeMIWHPuch4-A25JHkmY57w9SMZPyocMA1SxaGle6L-usuL5kNv3MnMOgMwjnD6zN8r78xdS-XPlfM2hEvpMEEKsx-8ma9RBWfaZC_x5yE8TYtZXJFLDPM32aawDbtxU1MQL3jG_qcvdpff80AdiCd4YLTctlcZ2kNjtfUIdg", label: "Identity", title: "Who Are We" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uiPeU-GaDpbhFXuw2ehLeNQAIjKr-S9yU_U1Yt7FP7j1E9BegxHpORKHu-O3CPoQScwt3iRk2d7xMm8MGmoY8aJDQcoybPTofRr20Nr6g_DihXOjlDhRpefZaD0-t_kCh3d5Nt8T3DSHj1lJtsUuKgKmXBzaFUXcLR9TewU9oqtOugKkJPFRfA-0y_ofKvDHzrv7cnz6ZwWZaYXkypunsQCjgS7iquqMTzrFW8BnsO8Fq9N4r8J0QPZIIpvSrj_UYGrun-5dZVRHOE", label: "Movement", title: "Let's build the next movement" }
+  ];
+
+  const sakhiItems = [
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0ujbJ3CG5kMbQIbZmCgb1ukGM9LAxWEN-fKc10vxk_WQ5jP5SZ6095eVofZV1iz_4k6wQBlper67jXWeTYMW6EzikPgjcoysI8_3CbM1N6PgCRg6ShMG_WGWv6VSjJ-4s0-5kIAqGdsCDT07BObDL40cCe_q1lLkJ4-il0jvoZKax3FCUsi1x9efRmnW1qjbZ-ILhb3Q8UNr4lwzOY1JwJlplPyJ_tn06wmuoD9LLptyn4h3oAu4uNfICXk35Qis_zuy0yJPsz71e3U", label: "Visual Identity", title: "Sakhi - Series 01" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uj36PUdWdgmAXGfJ47j4_DoUTLreTvMpjwoBAXo3GNVdewvmJTV-tpvYAkY7k6n4tOlgbBowmTYCowk-qJUWjdvsxwb5nCzvzdmW14PjNKc8YKKZ81_VFKEgsSRBsFLUFxL_K6XvuQGU8hIXK95n6OvGeb4mbUTvNEaVntlS5BKWBV2m2elko1yYiFGGXx5d6lFd2WgWv2VUO3S8sefMo2tBnn76blvLBtc86qFMth8eOIHHZOvbBgK8L6AI2uAOUI5NetMbQabHhk", label: "Visual Identity", title: "Sakhi - Series 02" }
+  ];
+
+  const seaBerryItems = [
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uiowft7oxIx7reKdO1cLZwpOIqX1ROo57trXDTWTOavJS5DDb77TN5g94cBvRXu2WHQtEZxIarAPloN5HJ4blSTDdninsdNecGGz-IDTth4xepTEiRnsWnQCEAoM2QCxLwOiohwsFMDr51qh_tM7kKokcSNAMgUu7XgjrNCzB859T1TCn_5gUFO-g1pt6z-K9ELW6t0QHudFJqFKMNoBfbztRMoAfOsviwKoUK31pvNTa-q3vCcbylIFTam7ZBTPGncCDyni1Pl7w", label: "Vehicle Graphics", title: "SeaBerry - Delivery Fleet" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0ujFopVDnE-if3bfqIa-GeJO4LDlgGCI3Dgbya2LhqT5SqXuohF0-KHPUet_HZ80C7YFUSXZgO85RAm7CWJjwhYgUBb-FWKsZ0kWigzBVGOYRbwZH1Bx6f_DWxTxe_fjl3ojkPhgNt4N73ejVzfoZofb9U9W_vU1__qyeUCc2GeX24QBDTzWJkR280C07BiMW62wtrYPCdcQrLxEz_dknoYcjmxmfz_VRofBtxp41ZAOJ-h4TW2Wc-Mf8GQWSlnhT71DoWnVm8gAig", label: "Brand Identity", title: "SeaBerry - Communication Poster" }
+  ];
+
+  const artisanItems = [
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uhleWWfoq80v1Qj4fq32R2MDqmNiznBogsXDwvSMfATrvSiSU4riXU5hk7qFs5y_lJ0dRjKalE8rk7Mcg_QTBTzO0BQhj-lQGNz58ss5RpHCJsZYTVLIUawiS8DkHGjLU9b1vpnaD5a61BZbtaH3nWz3zjeAkheDMDg_joF0Imxaput_7fYkt6cMQ65IuN671ULqudyCPYUH3qThn35UUzqdrz8wlEaDySWzau1OFN7LCiOT_4b_0iaMtWHAEk0PZBKjQoihZPk2A", label: "E-commerce", title: "Artisan - Website Sale" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0ugEmiS6ptAJkmchkp-CS-EnBHQq6q6rFYWUT1KfCCRQRQhxF0ViEux4xBPEF3uPaOO5gf4_tjx7rVDGXJLBa2_anX-CFY2txX-7puuJY-oq27eptCS5KwbArkP0kS7mn8AZLRV2LJir1i-mZkmCz1BEglWPk4P8vJvzFAAi2kN8hV2QphYgqEarVO4ORbUvegCUuLND_SqIsmiLSWRsjVw18UG8U9YYG2lMWFAVgi4qTOW9vxuHqNmxiakjfuEVbJJCqv4bDsC5Bns", label: "Editorial", title: "Artisan - Shop the Style" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0uj4JZSeZnoV5WMA7_ThIt5JhR7jfMexKZSN2An9IXM71gGALjMrNEl9AI-90bUN8kgyppMLp9whbZiWh9sbRB5kI0QCzCsR4rjJc1FzMJ_w8fpSLshrVX9hXAkT9BHxKiLtA0VRukfAjUS3v1Opt9tyaSm0aJEDE9ALQhMVH6lVrfIWf-dL0nhKTMiso29ptWb-2YBBl3UJEidjNQk3p0tZ22RUvOfXU_53N5_W7ZFo-q5xG7vi0Z6qAe5RfBtWdorPD_N3BlgtGM", label: "Marketing", title: "Artisan - Brand Story" },
+    { image: "https://lh3.googleusercontent.com/aida/ADBb0ug52eRMb0PlyfyliJ3fQ7I06y8Qg35j6c5mcnNT8aNyLMGH2jM7gNPzkUE0UjByFlMDG7Wc2ecnqJfDp0vIgCBn6NOoDTjHDUU_RkG7C2Od4TLnTnfYlrAF94s6Io9kstA-2Ic_mSl4ZJvNq5R01O-r8C320KCpA7cffLmDrCMx2kyKPmh2LEuEcr42WlJIstcZ2pm7Wgl_Aw8QdyBsTf2w1J5AkHBwQ728UdE3owmpT372bTkOLBe5QTNvBKm6C6vCerlJ6b0vq5I", label: "Editorial", title: "Artisan - Our Favorites" }
+  ];
+
+  return (
+    <section id="design-showcase" className="bg-surface-container-lowest py-32">
+      <div className="px-8 md:px-20 max-w-7xl mx-auto mb-20">
+        <span className="font-label text-sm uppercase tracking-widest text-on-surface-variant">Creative Outlet</span>
+        <h2 className="font-headline text-5xl mt-4">Design & Posters</h2>
+      </div>
+      
+      <DesignCarousel title="Unhinged Mixtape" items={mixtapeItems} />
+      <DesignCarousel title="Sakhi - Lyric Sheet" items={sakhiItems} />
+      <DesignCarousel title="SeaBerry - Brand & Vehicle Identity" items={seaBerryItems} />
+      <DesignCarousel title="Designs for the brand Artisan by Nikhita" items={artisanItems} />
+    </section>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="bg-surface-container py-12 px-8 md:px-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <a href="#" className="font-headline font-bold text-2xl tracking-tighter text-tertiary">Richa</a>
+        <div className="flex gap-8 text-on-surface-variant">
+          <a href="#" className="hover:text-tertiary transition-colors"><Instagram className="w-6 h-6" /></a>
+          <a href="#" className="hover:text-tertiary transition-colors"><Linkedin className="w-6 h-6" /></a>
+          <a href="#" className="hover:text-tertiary transition-colors"><Twitter className="w-6 h-6" /></a>
+        </div>
+        <p className="text-on-surface-variant font-label text-sm uppercase tracking-widest">© 2024 Richa. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default function App() {
+  return (
+    <div className="relative">
+      <Navbar />
+      
+      {/* Vertical Rail Nav - Desktop Only */}
+      <aside className="hidden xl:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-12 z-40">
+        <div className="h-20 w-[1px] bg-outline-variant/30 mx-auto"></div>
+        <a href="#hero" className="font-label text-xs uppercase tracking-[0.3em] text-on-surface-variant hover:text-tertiary transition-colors [writing-mode:vertical-rl] rotate-180">Home</a>
+        <a href="#web-projects" className="font-label text-xs uppercase tracking-[0.3em] text-on-surface-variant hover:text-tertiary transition-colors [writing-mode:vertical-rl] rotate-180">Projects</a>
+        <a href="#design-showcase" className="font-label text-xs uppercase tracking-[0.3em] text-on-surface-variant hover:text-tertiary transition-colors [writing-mode:vertical-rl] rotate-180">Design</a>
+        <div className="h-20 w-[1px] bg-outline-variant/30 mx-auto"></div>
+      </aside>
+
+      <main>
+        <Hero />
+        <About />
+        <WebProjects />
+        <DesignShowcase />
+      </main>
+      <Footer />
+    </div>
+  );
+}
