@@ -116,7 +116,7 @@ const About = () => {
           <img 
             alt="Richa's Portrait" 
             className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700" 
-            src="/Screenshot 2026-03-22 074635.png.jpg"
+            src="/Screenshot20260322074635.png"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-surface-tint/5 pointer-events-none"></div>
@@ -151,7 +151,7 @@ const WebProjects = () => {
       title: "The Fluid Retailer",
       category: "Retail Innovation",
       description: "A seamless, mobile-first ecosystem for the modern shopper. Scan, pay, and transition effortlessly.",
-      image: "/Welcome to Future Spot_At Future Spot, we make shopping simple, secure, and future-ready__Our goal is to deliver high-quality products you can trust—backed by clear ._We provide clear product descriptions and upfron___.jpg",
+      image: "/WelcometoFuture.png",
       link: "https://shopping-renamed.onrender.com",
       span: "md:col-span-8"
     },
@@ -301,38 +301,38 @@ const DesignShowcase = () => {
       id: 1,
       title: "Unhinged Mixtape",
       slides: [
-        { title: "Unhinged Mixtape - Cover Art", subtitle: "Concept Art", image: "/20251116_121515_0000.png.jpg" },
-        { title: "Turning Music into Melodies", subtitle: "Creative Direction", image: "/20251116_121515_0001.png.jpg" },
-        { title: "Our Services", subtitle: "Strategy", image: "/20251116_121516_0004.png.jpg" },
-        { title: "Our Edge", subtitle: "Branding", image: "/20251116_121516_0003.png.jpg" },
-        { title: "Who Are We", subtitle: "Identity", image: "/20251116_121516_0002.png.jpg" },
-        { title: "Let's build the next movement", subtitle: "Movement", image: "/20251116_121516_0005.png.jpg" }
+        { title: "Unhinged Mixtape - Cover Art", subtitle: "Concept Art", image: "/202511161215150000.png" },
+        { title: "Turning Music into Melodies", subtitle: "Creative Direction", image: "/202511161215150001.png" },
+        { title: "Our Services", subtitle: "Strategy", image: "/202511161215160004.png" },
+        { title: "Our Edge", subtitle: "Branding", image: "/202511161215160003.png" },
+        { title: "Who Are We", subtitle: "Identity", image: "/202511161215160002.png" },
+        { title: "Let's build the next movement", subtitle: "Movement", image: "/202511161215160005.png" }
       ]
     },
     {
       id: 2,
       title: "Sakhi - Lyric Sheet",
       slides: [
-        { title: "Sakhi - Series 01", subtitle: "Visual Identity", image: "/WhatsApp Image 2026-03-22 at 11.40.35 AM.jpeg.jpg" },
-        { title: "Sakhi - Series 02", subtitle: "Visual Identity", image: "/WhatsApp Image 2026-03-22 at 11.40.35 AM (1).jpeg.jpg" }
+        { title: "Sakhi - Series 01", subtitle: "Visual Identity", image: "/WhatsAppImage20260322at114035AM.png" },
+        { title: "Sakhi - Series 02", subtitle: "Visual Identity", image: "/WhatsAppImage20260322at114035AM1.png" }
       ]
     },
     {
       id: 3,
       title: "SeaBerry - Brand & Vehicle Identity",
       slides: [
-        { title: "SeaBerry - Delivery Fleet", subtitle: "Vehicle Graphics", image: "/WhatsApp Image 2026-03-22 at 11.38.39 AM.jpeg.jpg" },
-        { title: "SeaBerry - Communication Poster", subtitle: "Brand Identity", image: "/WhatsApp Image 2026-03-22 at 11.45.22 AM.jpeg.jpg" }
+        { title: "SeaBerry - Delivery Fleet", subtitle: "Vehicle Graphics", image: "/WhatsAppImage20260322at113839AM.png" },
+        { title: "SeaBerry - Communication Poster", subtitle: "Brand Identity", image: "/WhatsAppImage20260322at114522AM.png" }
       ]
     },
     {
       id: 4,
       title: "Designs for the brand Artisan by Nikhita",
       slides: [
-        { title: "Artisan - Website Sale", subtitle: "E-commerce", image: "/WhatsApp Image 2026-03-22 at 11.40.10 AM.jpeg.jpg" },
-        { title: "Artisan - Shop the Style", subtitle: "Editorial", image: "/WhatsApp Image 2026-03-22 at 11.38.40 AM.jpeg.jpg" },
-        { title: "Artisan - Brand Story", subtitle: "Marketing", image: "/WhatsApp Image 2026-03-22 at 11.40.09 AM.jpeg.jpg" },
-        { title: "Artisan - Our Favorites", subtitle: "Editorial", image: "/WhatsApp Image 2026-03-22 at 11.38.40 AM (1).jpeg.jpg" }
+        { title: "Artisan - Website Sale", subtitle: "E-commerce", image: "/WhatsAppImage20260322at114010AM.png" },
+        { title: "Artisan - Shop the Style", subtitle: "Editorial", image: "/WhatsAppImage20260322at113840AM.png" },
+        { title: "Artisan - Brand Story", subtitle: "Marketing", image: "/WhatsAppImage20260322at114009AM.png" },
+        { title: "Artisan - Our Favorites", subtitle: "Editorial", image: "/WhatsAppImage20260322at113840AM1.png" }
       ]
     }
   ];
