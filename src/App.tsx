@@ -116,7 +116,7 @@ const About = () => {
           <img 
             alt="Richa's Portrait" 
             className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700" 
-            src="https://lh3.googleusercontent.com/aida/ADBb0ug3n62uw035EdPNhZfVR8d7oYiRdwdfKMJ9Gd0SrrQNnPJPRUxlFA5M1RS7IHpPZZNYWw7IjtAM6Ilzv01zNvCpUc3cyeTjbbZfKKADdWiMfuuHHrU_JRq9J1k1I-j1ajfs21wCdBhT8m1KD5alUtl_Ypy_i6ykTzH9g2wh1mMUAwhdYhxwkQFXux-ocjdyv5RpBZtmlvLzpb_YWwL12FE1umx8NIURoc8h_nFnzv7avnBW-5LXPwl3NnWW_GwW-7DSiZGqjxZ37Q"
+            src="/Screenshot 2026-03-22 074635.png.jpg"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-surface-tint/5 pointer-events-none"></div>
@@ -151,7 +151,7 @@ const WebProjects = () => {
       title: "The Fluid Retailer",
       category: "Retail Innovation",
       description: "A seamless, mobile-first ecosystem for the modern shopper. Scan, pay, and transition effortlessly.",
-      image: "https://lh3.googleusercontent.com/aida/ADBb0ujvhBywpD2A-11UHaRRGyxw4PU2oET057MWF2dAr0OjddnLX8wANkc_b0OwefORsYQuE-T5Yz76YA0bUdobf0KiZMWe15JcBOG2SM2S1orusLv9B0bhgAYBAV-Ebw5PvdhgIL4Oiwf83aKDLG9KbIpWI2PLdC_7HijEQh9lX_0zI93IDfndwyRjrbXipVd1khkrrYyRrG7vohnJzCasckwbYMpV3L1Bpp8yWQegGfmn-idXNdY9AB9bsPQP2WfJsbk2c_Q5kCcnLng",
+      image: "/Welcome to Future Spot_At Future Spot, we make shopping simple, secure, and future-ready__Our goal is to deliver high-quality products you can trust—backed by clear ._We provide clear product descriptions and upfron___.jpg",
       link: "https://shopping-renamed.onrender.com",
       span: "md:col-span-8"
     },
@@ -301,38 +301,38 @@ const DesignShowcase = () => {
       id: 1,
       title: "Unhinged Mixtape",
       slides: [
-        { title: "Unhinged Mixtape - Cover Art", subtitle: "Concept Art", image: "https://lh3.googleusercontent.com/aida/ADBb0ujfmhVN8hbidhyYf1OpuzpmqeSqK8TPFYWNQ7wNoMSnwJlGozpxzm3_AcyjljhyatFIYV30jRMBpFX1JqUQSmTySb81cb2hgRgCzucfkcybITPj1AbDr2Lm2E40SzcFR7ettLhy_LHB2_rjQ0hZmm2K4jn3ecxJL5l1I9LkhsxqumYO3MnQ7enaQ_5oOxNG4gRmW-U9_2rBjVW8QGi-FYSRoQAp_JBKBJ2JdbwfX4D5CAPsr_OR-3WfezfhKim1QSe6Kh4n4Cakyh4" },
-        { title: "Turning Music into Melodies", subtitle: "Creative Direction", image: "https://lh3.googleusercontent.com/aida/ADBb0ui6ac6foXdKbJJdx7-9gEUvazvepktcGwMCQVgF0IQmSr7XSp8dSdVDvS_aIVtAaxHAhXm3Sy1z1ZdbG49T1hONwnoTtNeR5iSdpoMdFY8TprBwaBkd1mCbJR-0EOqn1EFJkUm6rr66UTf0uj0Y0J9qHHyzi02CgJ0-Kw-2hRICoTu9LBMQCSilrRdr3rttl2ZQrquaBuWOt5RwDoYO7iaYU6ogsptayTKaw24GpJSV4b4viofJ8p96DOzCOt0BZb67hS2RI6QuMZE" },
-        { title: "Our Services", subtitle: "Strategy", image: "https://lh3.googleusercontent.com/aida/ADBb0uh-4FAPAAiIOT7lHyCqvJzPkDgcp1MZB0UJHykNw587qC3iFC3bm9YM03puiXoS22O18Nk3R_stPt6bY0rMIsMORIQnQV71iY51wxrqCkVWgvKJt7aKBApyQx3Vt357jxXNBy-bMY4JYiZze256TWLJRHiC-RF6qvka_tvBT_5pN17xpctX0eoIdYxLgYqNHJ1U6DdkEBiXIOBc3K9WPsKnu17rsSmFYKlqo-6ImsE8cN-dOwC0EHN14U7gCt_0Rs51Lun80RPRwA" },
-        { title: "Our Edge", subtitle: "Branding", image: "https://lh3.googleusercontent.com/aida/ADBb0uiKmGeXMmTaPJyXuYE7JD4bQKyCny63MPMq-J-kiktP-x6-apE2bmV6uxJxhJsAm7OR8twXFqP3iQRJQqSR7VRR73qqcHxFVapMmisxN0DLi8b10Nz3CeAUQDZ14pMjSbiiKinZM67OR_zpL5I5FjIPJO71ek2AZkMQiV7UqQpToxeVsKw0ClGe5p-s3rysJxmD5I--foOHXuzoW68YTgIDm3ZN8iBOtNR-2CznWbVaBZZxd3Jx0QwetrR1TvxNI5yJUZFR72fqVKw" },
-        { title: "Who Are We", subtitle: "Identity", image: "https://lh3.googleusercontent.com/aida/ADBb0uipTS-gZt_6Oj_Z9nymAWoD7G8MVwG5bJuhlcYJYydwMxwerLazogUrhpjgRQFzpEiEl-WJIzDoBONuA4K_kXD8BOfNNpr2Fc5q-LeMIWHPuch4-A25JHkmY57w9SMZPyocMA1SxaGle6L-usuL5kNv3MnMOgMwjnD6zN8r78xdS-XPlfM2hEvpMEEKsx-8ma9RBWfaZC_x5yE8TYtZXJFLDPM32aawDbtxU1MQL3jG_qcvdpff80AdiCd4YLTctlcZ2kNjtfUIdg" },
-        { title: "Let's build the next movement", subtitle: "Movement", image: "https://lh3.googleusercontent.com/aida/ADBb0uiPeU-GaDpbhFXuw2ehLeNQAIjKr-S9yU_U1Yt7FP7j1E9BegxHpORKHu-O3CPoQScwt3iRk2d7xMm8MGmoY8aJDQcoybPTofRr20Nr6g_DihXOjlDhRpefZaD0-t_kCh3d5Nt8T3DSHj1lJtsUuKgKmXBzaFUXcLR9TewU9oqtOugKkJPFRfA-0y_ofKvDHzrv7cnz6ZwWZaYXkypunsQCjgS7iquqMTzrFW8BnsO8Fq9N4r8J0QPZIIpvSrj_UYGrun-5dZVRHOE" }
+        { title: "Unhinged Mixtape - Cover Art", subtitle: "Concept Art", image: "/20251116_121515_0000.png.jpg" },
+        { title: "Turning Music into Melodies", subtitle: "Creative Direction", image: "/20251116_121515_0001.png.jpg" },
+        { title: "Our Services", subtitle: "Strategy", image: "/20251116_121516_0004.png.jpg" },
+        { title: "Our Edge", subtitle: "Branding", image: "/20251116_121516_0003.png.jpg" },
+        { title: "Who Are We", subtitle: "Identity", image: "/20251116_121516_0002.png.jpg" },
+        { title: "Let's build the next movement", subtitle: "Movement", image: "/20251116_121516_0005.png.jpg" }
       ]
     },
     {
       id: 2,
       title: "Sakhi - Lyric Sheet",
       slides: [
-        { title: "Sakhi - Series 01", subtitle: "Visual Identity", image: "https://lh3.googleusercontent.com/aida/ADBb0ujbJ3CG5kMbQIbZmCgb1ukGM9LAxWEN-fKc10vxk_WQ5jP5SZ6095eVofZV1iz_4k6wQBlper67jXWeTYMW6EzikPgjcoysI8_3CbM1N6PgCRg6ShMG_WGWv6VSjJ-4s0-5kIAqGdsCDT07BObDL40cCe_q1lLkJ4-il0jvoZKax3FCUsi1x9efRmnW1qjbZ-ILhb3Q8UNr4lwzOY1JwJlplPyJ_tn06wmuoD9LLptyn4h3oAu4uNfICXk35Qis_zuy0yJPsz71e3U" },
-        { title: "Sakhi - Series 02", subtitle: "Visual Identity", image: "https://lh3.googleusercontent.com/aida/ADBb0uj36PUdWdgmAXGfJ47j4_DoUTLreTvMpjwoBAXo3GNVdewvmJTV-tpvYAkY7k6n4tOlgbBowmTYCowk-qJUWjdvsxwb5nCzvzdmW14PjNKc8YKKZ81_VFKEgsSRBsFLUFxL_K6XvuQGU8hIXK95n6OvGeb4mbUTvNEaVntlS5BKWBV2m2elko1yYiFGGXx5d6lFd2WgWv2VUO3S8sefMo2tBnn76blvLBtc86qFMth8eOIHHZOvbBgK8L6AI2uAOUI5NetMbQabHhk" }
+        { title: "Sakhi - Series 01", subtitle: "Visual Identity", image: "/WhatsApp Image 2026-03-22 at 11.40.35 AM.jpeg.jpg" },
+        { title: "Sakhi - Series 02", subtitle: "Visual Identity", image: "/WhatsApp Image 2026-03-22 at 11.40.35 AM (1).jpeg.jpg" }
       ]
     },
     {
       id: 3,
       title: "SeaBerry - Brand & Vehicle Identity",
       slides: [
-        { title: "SeaBerry - Delivery Fleet", subtitle: "Vehicle Graphics", image: "https://lh3.googleusercontent.com/aida/ADBb0uiowft7oxIx7reKdO1cLZwpOIqX1ROo57trXDTWTOavJS5DDb77TN5g94cBvRXu2WHQtEZxIarAPloN5HJ4blSTDdninsdNecGGz-IDTth4xepTEiRnsWnQCEAoM2QCxLwOiohwsFMDr51qh_tM7kKokcSNAMgUu7XgjrNCzB859T1TCn_5gUFO-g1pt6z-K9ELW6t0QHudFJqFKMNoBfbztRMoAfOsviwKoUK31pvNTa-q3vCcbylIFTam7ZBTPGncCDyni1Pl7w" },
-        { title: "SeaBerry - Communication Poster", subtitle: "Brand Identity", image: "https://lh3.googleusercontent.com/aida/ADBb0ujFopVDnE-if3bfqIa-GeJO4LDlgGCI3Dgbya2LhqT5SqXuohF0-KHPUet_HZ80C7YFUSXZgO85RAm7CWJjwhYgUBb-FWKsZ0kWigzBVGOYRbwZH1Bx6f_DWxTxe_fjl3ojkPhgNt4N73ejVzfoZofb9U9W_vU1__qyeUCc2GeX24QBDTzWJkR280C07BiMW62wtrYPCdcQrLxEz_dknoYcjmxmfz_VRofBtxp41ZAOJ-h4TW2Wc-Mf8GQWSlnhT71DoWnVm8gAig" }
+        { title: "SeaBerry - Delivery Fleet", subtitle: "Vehicle Graphics", image: "/WhatsApp Image 2026-03-22 at 11.38.39 AM.jpeg.jpg" },
+        { title: "SeaBerry - Communication Poster", subtitle: "Brand Identity", image: "/WhatsApp Image 2026-03-22 at 11.45.22 AM.jpeg.jpg" }
       ]
     },
     {
       id: 4,
       title: "Designs for the brand Artisan by Nikhita",
       slides: [
-        { title: "Artisan - Website Sale", subtitle: "E-commerce", image: "https://lh3.googleusercontent.com/aida/ADBb0uhleWWfoq80v1Qj4fq32R2MDqmNiznBogsXDwvSMfATrvSiSU4riXU5hk7qFs5y_lJ0dRjKalE8rk7Mcg_QTBTzO0BQhj-lQGNz58ss5RpHCJsZYTVLIUawiS8DkHGjLU9b1vpnaD5a61BZbtaH3nWz3zjeAkheDMDg_joF0Imxaput_7fYkt6cMQ65IuN671ULqudyCPYUH3qThn35UUzqdrz8wlEaDySWzau1OFN7LCiOT_4b_0iaMtWHAEk0PZBKjQoihZPk2A" },
-        { title: "Artisan - Shop the Style", subtitle: "Editorial", image: "https://lh3.googleusercontent.com/aida/ADBb0ugEmiS6ptAJkmchkp-CS-EnBHQq6q6rFYWUT1KfCCRQRQhxF0ViEux4xBPEF3uPaOO5gf4_tjx7rVDGXJLBa2_anX-CFY2txX-7puuJY-oq27eptCS5KwbArkP0kS7mn8AZLRV2LJir1i-mZkmCz1BEglWPk4P8vJvzFAAi2kN8hV2QphYgqEarVO4ORbUvegCUuLND_SqIsmiLSWRsjVw18UG8U9YYG2lMWFAVgi4qTOW9vxuHqNmxiakjfuEVbJJCqv4bDsC5Bns" },
-        { title: "Artisan - Brand Story", subtitle: "Marketing", image: "https://lh3.googleusercontent.com/aida/ADBb0uj4JZSeZnoV5WMA7_ThIt5JhR7jfMexKZSN2An9IXM71gGALjMrNEl9AI-90bUN8kgygppMLp9whbZiWh9sbRB5kI0QCzCsR4rjJc1FzMJ_w8fpSLshrVX9hXAkT9BHxKiLtA0VRukfAjUS3v1Opt9tyaSm0aJEDE9ALQhMVH6lVrfIWf-dL0nhKTMiso29ptWb-2YBBl3UJEidjNQk3p0tZ22RUvOfXU_53N5_W7ZFo-q5xG7vi0Z6qAe5RfBtWdorPD_N3BlgtGM" },
-        { title: "Artisan - Our Favorites", subtitle: "Editorial", image: "https://lh3.googleusercontent.com/aida/ADBb0ug52eRMb0PlyfyliJ3fQ7I06y8Qg35j6c5mcnNT8aNyLMGH2jM7gNPzkUE0UjByFlMDG7Wc2ecnqJfDp0vIgCBn6NOoDTjHDUU_RkG7C2Od4TLnTnfYlrAF94s6Io9kstA-2Ic_mSl4ZJvNq5R01O-r8C320KCpA7cffLmDrCMx2kyKPmh2LEuEcr42WlJIstcZ2pm7Wgl_Aw8QdyBsTf2w1J5AkHBwQ728UdE3owmpT372bTkOLBe5QTNvBKm6C6vCerlJ6b0vq5I" }
+        { title: "Artisan - Website Sale", subtitle: "E-commerce", image: "/WhatsApp Image 2026-03-22 at 11.40.10 AM.jpeg.jpg" },
+        { title: "Artisan - Shop the Style", subtitle: "Editorial", image: "/WhatsApp Image 2026-03-22 at 11.38.40 AM.jpeg.jpg" },
+        { title: "Artisan - Brand Story", subtitle: "Marketing", image: "/WhatsApp Image 2026-03-22 at 11.40.09 AM.jpeg.jpg" },
+        { title: "Artisan - Our Favorites", subtitle: "Editorial", image: "/WhatsApp Image 2026-03-22 at 11.38.40 AM (1).jpeg.jpg" }
       ]
     }
   ];
